@@ -1,0 +1,28 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+char *toggleCase(char *a)
+{
+	for(int i = 0; a[i] != '\0'; i++)
+	{
+		
+		// Bitwise EXOR with 32
+		a[i] ^= 32;
+	}
+	return a;
+}
+
+// Driver Code
+int main()
+{
+	char str[] = "CheRrY";
+	cout << "Toggle case: "
+		<< toggleCase(str) << endl;
+	cout << "Original string: "
+		<< toggleCase(str) << endl;
+	return 0;
+}
+
+
